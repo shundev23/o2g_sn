@@ -3,12 +3,35 @@ import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import SocialShare from "../../components/SocialShare";
+import type { Metadata } from "next";
 
+// 静的生成対象のパス一覧を返す
+// ❌ { params: { slug: string } }[] は不要
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const files = fs.readdirSync(path.join(process.cwd(), "content/blog"));
-  return files.map((filename) => ({ slug: filename.replace(".mdx", "") }));
+  // 例: [{ slug: "post1" }, { slug: "post2" }, ... ]
+  return files.map((filename) => ({
+    slug: filename.replace(".mdx", ""),
+  }));
 }
 
+// メタデータを動的に生成
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const filePath = path.join(process.cwd(), "content/blog", `${params.slug}.mdx`);
+  const fileContent = fs.readFileSync(filePath, "utf-8");
+  const { data } = matter(fileContent);
+
+  return {
+    title: data.title,
+    description: data.description || "A blog post from my portfolio site",
+  };
+}
+
+// ブログ記事のページ本体
 export default async function Page({
   params,
 }: {
