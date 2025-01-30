@@ -1,21 +1,21 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* グローバルなテキストスタイル */
+h1 {
+  @apply text-4xl font-bold mb-4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h2 {
+  @apply text-2xl font-semibold mb-2;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+p {
+  @apply text-base leading-relaxed text-gray-400;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300 transition;
 }
