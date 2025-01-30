@@ -5,10 +5,10 @@ export default function Home() {
     <div className="container mx-auto px-4 md:px-6 lg:px-12 py-6 space-y-12">
       {/* メッセージ */}
       <section className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold text-black mb-4">Hi, I&apos;m Shun!</h1>
+        <h1 className="text-4xl font-bold text-black mb-4">Welcome to my web site</h1>
         <p className="text-lg text-gray-400 leading-relaxed">
           I&apos;m a software developer based in Japan.  
-          I love crafting modern web applications and exploring new technologies.  
+          I love crafting web applications and exploring new technologies.  
           Beyond coding, I have a deep passion for photography, capturing moments that inspire me.  
           You&apos;ll also find me on the soccer field, enjoying the thrill of the game.  
 

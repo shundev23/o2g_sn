@@ -19,10 +19,10 @@ export default function About() {
       <section className="max-w-2xl mx-auto">
         <h2 className="text-2xl font-semibold text-black">About me</h2>
         <p className="text-lg text-gray-400 mt-4">
-        I work as a software developer.  
-        In my personal projects, I&apos;m developing **Somni**, a dream management iOS app.  
-        My favorite programming language is Golang.  
-        I enjoy photography and watching movies.  
+        I work as a software developer in **Tokyo**.  
+        In my personal projects, I mainly develop **iOS apps**.  
+        I&apos;m passionate about **Golang**, so I&apos;m deeply engaged in building products with it.  
+        My hobbies include **taking photos with my Leica Q** and **exploring the outdoors**.  
         Looking forward to connecting with you!
         </p>
       </section>

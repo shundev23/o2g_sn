@@ -6,10 +6,8 @@ import SocialShare from "../../components/SocialShare";
 import type { Metadata } from "next";
 
 // 静的生成対象のパス一覧を返す
-// ❌ { params: { slug: string } }[] は不要
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const files = fs.readdirSync(path.join(process.cwd(), "content/blog"));
-  // 例: [{ slug: "post1" }, { slug: "post2" }, ... ]
   return files.map((filename) => ({
     slug: filename.replace(".mdx", ""),
   }));
