@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import SocialShare from "../../components/SocialShare";
+import SocialShare from "../components/SocialShare";
 import type { Metadata } from "next";
 
 // 静的生成対象のパス一覧を返す
