@@ -88,9 +88,9 @@ const GearPage = () => {
         {gearList.map((section) => (
           <div key={section.category}>
             <h2 className="text-2xl font-semibold text-black mb-4">{section.category}</h2>
-            <div className="grid grid-cols-2 gap-6 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
               {section.items.map((item) => (
-                <div key={item.name} className="border border-black p-4 rounded-lg flex items-center space-x-4 w-full max-w-lg">
+                <div key={item.name} className="border border-black p-4 rounded-lg flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-lg">
                   <Image
                     src={item.image}
                     alt={item.name}
@@ -98,7 +98,7 @@ const GearPage = () => {
                     height={80}
                     className="rounded-lg object-cover flex-shrink-0"
                   />
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0 text-center sm:text-left">
                     <h3 className="text-lg font-semibold text-black truncate">{item.name}</h3>
                     <p className="text-gray-700 text-sm line-clamp-3">{item.description}</p>
                   </div>
