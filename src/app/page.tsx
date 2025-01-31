@@ -10,7 +10,6 @@ export default function Home() {
           I&apos;m a software developer based in Japan.  
           I love crafting web applications and exploring new technologies.  
           Beyond coding, I have a deep passion for photography, capturing moments that inspire me.  
-          You&apos;ll also find me on the soccer field, enjoying the thrill of the game.  
 
           <br /><br />
           This site showcases my work, thoughts, and the tools I use.  
