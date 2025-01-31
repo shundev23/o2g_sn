@@ -21,8 +21,8 @@ export default function About() {
         <p className="text-lg text-gray-400 mt-4">
         I work as a software developer in Tokyo.  
         In my personal projects, I mainly develop iOS apps.  
-        I&apos;m passionate about **Golang**, so I&apos;m deeply engaged in building products with it.  
-        My hobbies include taking photos with my Leica Q and exploring the outdoors**.  
+        I&apos;m passionate about Golang, so I&apos;m deeply engaged in building products with it.  
+        My hobbies include taking photos with my Leica Q and exploring the outdoors.  
         Looking forward to connecting with you!
         </p>
       </section>
