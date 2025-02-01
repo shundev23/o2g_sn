@@ -12,7 +12,7 @@ export default function Home() {
           Beyond coding, I have a deep passion for photography, capturing moments that inspire me.  
 
           <br /><br />
-          This site showcases my work, thoughts, and the tools I use.  
+          This site showcases my work, thoughts, and the tools I use.
           Feel free to explore and connect with me!
         </p>
       </section>

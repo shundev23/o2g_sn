@@ -39,7 +39,6 @@ const Navbar = () => {
           <div className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
             <Link href="/" className="text-black hover:opacity-75">Home</Link>
             <Link href="/about" className="text-black hover:opacity-75">About</Link>
-            <Link href="/blog" className="text-black hover:opacity-75">Blog</Link>
             <Link href="/gear" className="text-black hover:opacity-75">Gadget</Link>
           </div>
         </div>
