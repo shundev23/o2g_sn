@@ -72,6 +72,14 @@ const gearList = [
 const GearPage = () => {
   return (
     <div className="container mx-auto px-6 py-8">
+      <section className="max-w-4xl mx-auto mt-12">
+        <h2 className="text-2xl font-bold mb-6">Gadgets I Recommend</h2>
+        <p className="mb-6 text-black">
+          Here is a list of gadgets that I am glad I bought.
+          Please take a look and use it as a reference.
+        </p>
+        {/* ガジェットの一覧をここに追加 */}
+      </section>
       <div className="mt-8 space-y-8 max-w-7xl mx-auto">
         {gearList.map((section) => (
           <div key={section.category}>

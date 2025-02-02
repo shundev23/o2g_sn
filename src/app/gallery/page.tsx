@@ -79,6 +79,11 @@ export default function Gallery() {
       {/* 追加するグリッドギャラリー */}
       <section className="max-w-4xl mx-auto mt-12">
         <h2 className="text-2xl font-bold mb-6">Photo Collection</h2>
+        <p className="mb-6 text-black">
+          Here you can view photos taken with my favorite camera, the Leica Q.
+          Many of the photos are in monochrome, which I believe brings out the true essence of Leica.
+          Please take a look and enjoy.
+        </p>
         <div className="grid grid-cols-3 gap-4">
           {displayedImages.map((src, index) => (
             <div
