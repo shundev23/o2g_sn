@@ -19,3 +19,7 @@ p {
 a {
   @apply text-blue-400 hover:text-blue-300 transition;
 }
+
+.bg-netflix {
+  background: linear-gradient(45deg, #e50914, #221f1f);
+}
